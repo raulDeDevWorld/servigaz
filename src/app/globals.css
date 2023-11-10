@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  
+}
+
+
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background-color: rgb(0, 165, 130); */
+}
+
+
+
+@media (min-width: 1024px) {
+
+  /* Designing for scroll-bar */
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    z-index: 100000000000000000000000;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    z-index: 100000000000000000000000;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a8a8a8;
+    border-radius: 5px;
+    z-index: 100000000000000000000000;
+}
+}
