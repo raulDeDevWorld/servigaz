@@ -48,7 +48,7 @@ export default function Navbar({ children }) {
                         <a href="#Testimonios" className={` lg:block py-2 pl-3 pr-4 text-white font-bold  rounded  lg:hover:bg-transparent lg:p-0  ${active === 'Testimonios' && 'text-black' }`} onClick={()=>pathnameHandler('Testimonios')}>Testimonios</a>
                     </li>
                     <li>
-                        <a href="#Artículos" className={` lg:block py-2 pl-3 pr-4 text-white rounded  lg:hover:bg-transparent lg:p-0  ${active === 'Artículos' && 'text-black' }`} onClick={()=>pathnameHandler('Artículos')}>Artículos</a>
+                        <a href="#Referencias" className={` lg:block py-2 pl-3 pr-4 text-white rounded  lg:hover:bg-transparent lg:p-0  ${active === 'Referencias' && 'text-black' }`} onClick={()=>pathnameHandler('Referencias')}>Referencias</a>
                     </li>
                     {/* <li>
                         <a href="#AcercaDeMi" className="block py-2 pl-3 pr-4 text-white rounded  lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 ${active === undefined && 'text-black' }`} onClick={pathnameHandler}>Acerca de mi</a>

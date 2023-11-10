@@ -334,7 +334,7 @@ export default function Modal({ theme, styled, click, children, }) {
                         <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                             <div className="sm:col-span-3">
                                 <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">Nombre</label>
-                                <input type="text" name="perfil" className="block w-full rounded-md border-0 p-1.5 mt-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" defaultValue={data && data.articles && data.articles[item] && data.articles[item]['titulo de #Artículos']} />
+                                <input type="text" name="perfil" className="block w-full rounded-md border-0 p-1.5 mt-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" defaultValue={data && data.articles && data.articles[item] && data.articles[item]['titulo de #Referencias']} />
                             </div>
                             <div className="sm:col-span-3">
                                 <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">Testimonio</label>
@@ -351,13 +351,13 @@ export default function Modal({ theme, styled, click, children, }) {
                 </form>
             </div>
             break
-        case 'Artículos':
+        case 'Referencias':
             return <div className="fixed top-0 flex justify-center w-full h-auto bg-[#000000b4] p-0 z-40">
                 <form className="relative w-[95%] h-screen overflow-y-scroll lg:w-[50%] bg-white border-b border-gray-900/10 pt-16 pb-4 px-5" onSubmit={addArticle}>
 
 
                     <div className="col-span-full">
-                        <h2 className="text-base font-semibold leading-7 text-gray-900">Administrar artículos</h2>
+                        <h2 className="text-base font-semibold leading-7 text-gray-900">Administrar Referencias</h2>
                         <label htmlFor="cover-photo" className="block text-sm font-medium leading-6 text-gray-900">Foto de servicio</label>
                         <div className="w-full flex justify-center">
                             <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10 md:w-[250px] md:h-[200px]" style={{ backgroundImage: `url('${dataURL && dataURL.articleIMG && dataURL.articleIMG ? dataURL.articleIMG : (userDB && userDB.articleIMG.IMG2023.url)}')`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
@@ -383,7 +383,7 @@ export default function Modal({ theme, styled, click, children, }) {
                         <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                             <div className="sm:col-span-3">
                                 <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">Título de artículo</label>
-                                <input type="text" name="titulo de #Artículos" className="block w-full rounded-md border-0 p-1.5 mt-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" defaultValue={data && data.articles && data.articles[item] && data.articles[item]['titulo de #Artículos']} />
+                                <input type="text" name="titulo de #Referencias" className="block w-full rounded-md border-0 p-1.5 mt-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" defaultValue={data && data.articles && data.articles[item] && data.articles[item]['titulo de #Referencias']} />
                             </div>
                             <div className="sm:col-span-3">
                                 <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">Url</label>
